@@ -1,0 +1,607 @@
+/* #f1f1f1 BORDER BOTTOM FOR SECTION */
+
+html { scroll-behavior: smooth; }
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #dfe6e9;
+	font-family: 'Arvo', sans-serif;
+}
+
+
+
+
+
+/* index.html */
+
+/* TODO: Check format.js*/
+.scroll-down {
+	transform: translate3d(0, -100%, 0);
+	transition: transform 0.4s;
+}
+
+.scroll-up {
+	transform: none;
+	transition: transform 0.4s;
+}
+
+/* HEADER */
+
+
+/* background in header*/
+.intro-background-image {
+	overflow: hidden;
+	background-size: cover;
+	background-position: center 260%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-image: url('../imgs/photos/alaska.jpeg');
+	width: 100%;
+	height: 400px;
+}
+
+
+.nav-bar {
+	width: 100%;
+}
+
+.nav-bar nav {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.nav-bar nav ul {
+	text-align: right;
+	margin-top: 15px;
+	padding: 15px;
+	list-style-type: none;
+}
+
+.nav-bar nav ul li {
+	display: inline-block;
+	float: none;
+	/*padding: 0px 2%;*/
+}
+
+.nav-bar nav ul li:nth-child(1) {
+	float: left;
+	/*margin-left: 10%;*/
+	margin-left: 4%;
+	padding: 0 8%;
+}
+
+.nav-bar nav ul li:nth-child(2) {
+	float: left;
+}
+
+.nav-bar nav ul li:nth-child(4) {
+	/*margin-right: 7%;*/
+	padding: 0 8%;
+}
+
+.nav-bar nav ul li a {
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	display: block;
+	padding: 10px 35px;
+	background-color: #1E90FF;
+	border-radius: 5px;
+	font-size: 15px;
+}
+
+.nav-bar nav ul li a:hover{
+	color: black;
+	background-color: white;
+}
+
+.nav-bar nav ul li .active {
+	color: black;
+	background-color: white;
+}
+
+/* formatting for image and name */
+/* TODO: Fix image and name */
+.nav-bar .intro-wrapper h1 {
+	font-size: 20px;
+}
+
+.nav-bar .intro-wrapper {
+	display: inline-block;
+	padding: 10px 10px 0 10px;
+	position: absolute;
+	left: 50%;
+	top: 270px;
+	width: 125px;
+	margin-left: -120px;
+	text-align: center;
+}
+
+/* image in header formatting */
+.nav-bar .intro-wrapper .img-wrapper {
+	overflow: hidden;
+	position: relative;
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+	float: right;
+	margin: 0 -40% 10px;
+}
+
+.nav-bar .intro-wrapper .img-wrapper img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 100%;
+	width: auto;
+	min-height: 240%;
+	min-width: 100%;
+	padding-left: 10%;
+}
+
+.nav-bar .intro-wrapper h1 {
+	font-size: 30px;
+	width: 205px;
+}
+
+/* Introduction */
+
+
+.introduction-wrapper {
+	width: 1000px;
+	margin: 200px auto;
+}
+
+.introduction {
+	/*display: inline-block;*/
+	text-align: left;
+}
+
+.introduction h2 {
+	font-size: 30px;
+}
+
+.introduction p {
+	border: 2px dashed #000000;
+	padding: 10px;
+	font-size: 20px;
+}
+
+/* Skill Box*/
+
+.skillBar {
+	margin: 200px auto;
+	width: 60%;
+	padding: 20px;
+	box-sizing: border-box;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.skillBar h3 {
+	margin: 0;
+	padding: 0;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+.skillBar .skillBox {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 20px 0;
+}
+
+#sublevel {
+	margin-left: 5%;
+	width: 95%;
+}
+
+.skillBar .skillBox p {
+	text-transform: uppercase;
+	margin: 0 0 10px;
+	padding: 0;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.skillBar .skillBox p:nth-child(2) {
+	float: right;
+	position: relative;
+	top: -35px;
+}
+
+.skillBar .skillBox .skill {
+	background: #262626;
+	padding: 4px;
+	box-sizing: border-box;
+	border: 1px solid #0fffb7;
+	border-radius: 2px;
+	transition: all 2s linear;
+}
+
+.skillBar .skillBox .skill .skillLevel {
+	background: #0fffb7;
+	height: 20px;
+}
+
+.animated.python{
+	width: 90%;
+	animation: python 2s 0s;
+}
+
+@keyframes python {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 90%;
+	}
+}
+
+.animated.git {
+	width: 90%;
+	animation: python 2s 0s;
+}
+
+.animated.pytorch {
+	width: 65%;
+	animation: pytorch 2s 0s;
+}
+
+@keyframes pytorch {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 65%;
+	}
+}
+
+.animated.keras {
+	width: 60%;
+	animation: keras 2s 0s;
+}
+
+@keyframes keras {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 60%;
+	}
+}
+
+.animated.tensorflow {
+	width: 50%;
+	animation: tensorflow 2s 0s;
+}
+
+@keyframes tensorflow {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 50%;
+	}
+}
+
+.animated.java, .animated.html {
+	width: 80%;
+	animation: java 2s 0s;
+}
+
+@keyframes java {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 80%;
+	}
+}
+
+.animated.css, .animated.c, .animated.swift {
+	width: 50%;
+	animation: css 2s 0s;
+}
+
+@keyframes css {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 50%;
+	}
+}
+
+.animated.js {
+	width: 25%;
+	animation: js 2s 0s;
+}
+
+@keyframes js {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 25%;
+	}
+}
+
+.contact-box {
+	margin: 300px auto 300px;
+}
+
+.contact-title {
+	text-align: center;
+	font-size: 30px;
+}
+
+.contact-title hr{
+	width: 200px;
+}
+
+.contact-info p {
+	text-align: center;
+}
+
+.contact-links {
+	text-align: center;
+}
+
+.contact-links a {
+	margin: 10px;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 30px;
+  text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-envelope-o {
+	background: linear-gradient(to bottom, rgba(193,20,196,1) 0%, rgba(0,174,255,1) 100%);
+	color: white;
+	border-radius: 20%;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  border-radius: 20%;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  border-radius: 20%;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+  border-radius: 20%;
+}
+
+.scroll-up {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.scroll-up a {
+	padding: 16px 14px 6px;
+	background: #DDDDDD;
+	border-radius: 50%;
+}
+
+.icon-up-circle {
+  border: solid #898989;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 6px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+footer {
+	background: linear-gradient(to bottom, #898989, #C1C1C1);
+	color: white;
+	text-align: center;
+	padding: 20px 0px;
+}
+
+
+
+
+
+/* resume.html */
+
+
+.resume {
+	margin-top: 150px;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+.resume h1 {
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 50px;
+	text-decoration: underline;
+}
+
+
+
+
+
+/* photo.html */
+
+
+.imgs .photo-title h1 {
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 50px;
+	text-decoration: underline;
+	margin-top: 150px;
+	text-align: center;
+}
+
+.imgs {
+	padding-bottom: 100px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.imgs .row {
+  display: flex;
+  padding: 10px;
+}
+
+.imgs .column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+
+
+
+/* projects.html */
+
+
+.project-title h1 {
+	margin-top: 150px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 50px;
+	text-decoration: underline;	
+	text-align: center;
+}
+
+.project-container {
+	display: flex;
+	margin: 100px 30px;
+	padding-bottom: 100px;
+}
+
+.flex-project {
+	flex: 1;
+	border: 2px dashed #000000;
+	border-radius: 5%;
+	display: inline-block;
+	padding: 50px 0 50px 30px;
+}
+
+.flex-project .project-pic, .flex-project .image {
+	display: inline-block;
+	width: 70%;
+	vertical-align: middle;
+}
+
+.flex-project .image {
+	padding-bottom: 20px;
+}
+
+.flex-project .no-image {
+	width: 100%;
+	margin-left: -10px;
+	padding-bottom: 22px;
+}
+
+.flex-project .project-pic {
+	width: 150px;
+	height: 150px;
+	vertical-align: top;
+	object-fit: contain;
+	border-radius: 10px;
+	border: 1px solid black;
+	margin-right: 4%;
+	background-color: white;
+}
+
+.flex-project:first-child {
+    margin-right: 50px;
+} 
+
+.flex-project h2, .date {
+	display: inline;
+}
+
+.date {
+	margin-top: 5px;
+	float: right;
+}
+
+#project-icon {
+	display: inline;
+	border-radius: 50%;
+	padding: 0 1px;
+	color: black;
+	background: none;
+  	font-size: 20px;
+  	text-decoration: none;
+}
+
+.project-content {
+	margin-top: 30px;
+	font-size: 15px;
+}
+
+.tags {
+	margin-top: 20px;
+}
+
+.tags p {
+	display: inline;
+	font-size: small;
+}
+
+.tag-icon {
+	width: 10px;
+	height: 10px;
+}
+
+sup {
+	vertical-align: super;
+	font-size: small;
+}
+
+
+
+
+
+/* contact.html */
+
+
+/*.contact-title h1 {
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 50px;
+	text-decoration: underline;
+	margin-top: 150px;
+	text-align: center;
+}
+
+.contact-container {
+	text-align: center;
+}
+
+.contact {
+	display: inline-block;
+	text-align: left;
+}
+
+.contact label {
+	font
+}
+
+.contact input {
+	margin: 10px 0;
+	border: 1px solid red;
+}*/

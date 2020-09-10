@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<!-- TODO: Implement smooth scrolling in js -->
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Font links  -->
+		<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400">
+		<!-- Fade up animations -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<title>Travis Zhang</title>
+	</head>
+
+
+	<body>
+		<header id="header">
+			<div class="intro-background-image"></div>
+			<div class="nav-bar">
+				<div class="intro-wrapper">
+					<div class="img-wrapper">
+						<img src="../imgs/photo.jpeg" alt="Photograph of Travis Zhang" width="200" height="200">
+					</div>
+					<h1>Travis Zhang</h1>
+				</div>
+				<nav>
+					<ul class="nav-pane">
+						<li><a class="btn active" href="index.html">Home</a></li>
+						<li><a class="btn" href="resume.html">Resume</a></li>
+						<!-- <li><a class="btn" href="experience.html">Work Experience</a></li> -->
+						<li><a class="btn" href="projects.html">Projects</a></li>
+						<li><a class="btn" href="photo.html">Photography</a></li>
+						<!-- <li><a class="btn" href="contact.html">Contact</a></li> -->
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<section>
+			<div class="introduction-wrapper">
+				<div class="introduction" data-aos="fade-up">
+					<h2>A little bit about me...</h2>
+					<p>Hello! I am a freshman at Cornell University majoring in Computer Science. I have various passions within the Computer Science field,&nbsp;including adversarial attack research in machine learning, robotics,&nbsp;and mobile application development,&nbsp;and I hope to continue improving upon those passions in college. I wanted to develop this website not only to show my portfolio in a succinct manner, but to also learn web development skills. In addition to my passion for CS,&nbsp;I absolutely love taking pictures wherever I go,&nbsp;and it has become a cherished hobby of mine. <br> <br>Feel free to browse through my website for more information about me!</p>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="skillBar" data-aos="fade-up">
+				<h3>Software Skills</h3>
+				<div class="skillBox">
+					<p>Python</p>
+					<p>90%</p>
+					<div class="skill">
+						<div class="skillLevel revealOnScroll" data-animation="python"></div>
+					</div>
+				</div>
+				<div class="skillBox" id="sublevel">
+					<p>Pytorch</p>
+					<p>65%</p>
+					<div class="skill">
+						<div class="skillLevel revealOnScroll" data-animation="pytorch"></div>
+					</div>
+				</div>
+				<div class="skillBox" id="sublevel">
+					<p>Keras</p>
+					<p>60%</p>
+					<div class="skill">
+						<div class="skillLevel revealOnScroll" data-animation="keras"></div>
+					</div>
+				</div>
+				<div class="skillBox" id="sublevel">
+					<p>Tensorflow</p>
+					<p>50%</p>
+					<div class="skill">
+						<div class="skillLevel revealOnScroll" data-animation="tensorflow"></div>
+					</div>
+				</div>
+				<div class="skillBox">
+					<p>Git</p>
+					<p>90%</p>
+					<div class="skill">
+						<div class="skillLevel revealOnScroll" data-animation="git"></div>
+					</div>
+				</div>
+				<div class="skillBox">
+					<p>Java</p>
+					<p>80%</p>
+					<div class="skill">
+						<div class="skillLevel revealOnScroll" data-animation="java"></div>
+					</div>
+				</div>
+				<div class="skillBox">
+					<p>HTML5</p>
+					<p>80%</p>
+					<div class="skill">
+						<div class="skillLevel revealOnScroll" data-animation="html"></div>
+					</div>
+				</div>
+				<div class="skillBox">
+					<p>C++</p>
+					<p>50%</p>
+					<div class="skill">
+						<div class="skillLevel revealOnScroll" data-animation="c"></div>
+					</div>
+				</div>
+				<div class="skillBox">
+					<p>CSS3</p>
+					<p>50%</p>
+					<div class="skill">
+						<div class="skillLevel revealOnScroll" data-animation="css"></div>
+					</div>
+				</div>
+				<div class="skillBox">
+					<p>Swift</p>
+					<p>50%</p>
+					<div class="skill">
+						<div class="skillLevel revealOnScroll" data-animation="swift"></div>
+					</div>
+				</div>
+				<div class="skillBox">
+					<p>Javascript</p>
+					<p>25%</p>
+					<div class="skill">
+						<div class="skillLevel revealOnScroll" data-animation="js"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-box" data-aos="fade-up">
+			<div class="contact-title">
+				<h3>Connect with me!</h3>
+				<hr>
+			</div>
+			<div class="contact-info">
+				<p>
+					Let's connect! I prefer emails, but feel free to message me on either Linkedin or Facebook.
+				</p>
+				<div class="contact-links">
+					<a href="mailto: traviszhang10@gmail.com" class="fa fa-envelope-o fa-2x"></a>
+					<a href="https://www.facebook.com/travis.zhang.9" class="fa fa-facebook fa-2x"></a>
+					<a href="https://www.linkedin.com/in/travis-zhang-8430931a1/" class="fa fa-linkedin fa-2x"></a>
+					<a href="https://github.com/zhangtravis?tab=repositories" class="fa fa-github fa-2x"></a>
+				</div>
+			</div>
+
+		</section>
+
+		<div class="scroll-up">
+			<a href="#header">
+				<i class="icon-up-circle"></i>
+			</a>
+		</div>
+
+		<!-- TODO: Add scroll to top icon -->
+		
+		<footer>
+			<div class="logo-info">
+			</div>
+			<div>
+				<h4>Website designed by Travis Zhang <span>&#183;</span> All photos taken by Travis Zhang <span>&#183;</span> Last updated <span id="date"></span></h4>
+			</div>
+		</footer>
+
+		<!-- TODO: Check format.js -->
+		<script type="text/javascript" src="../js/format.js"></script>
+		<script>AOS.init();</script>
+	</body>
+
+</html>
