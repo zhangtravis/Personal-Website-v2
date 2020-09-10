@@ -303,12 +303,40 @@ body {
 	}
 }
 
-.animated.css, .animated.c, .animated.swift {
-	width: 50%;
+.animated.css {
+	width: 70%;
 	animation: css 2s 0s;
 }
 
 @keyframes css {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 70%;
+	}
+}
+
+.animated.swift {
+	width: 60%;
+	animation: swift 2s 0s;
+}
+
+@keyframes swift {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 60%;
+	}
+}
+
+.animated.c {
+	width: 50%;
+	animation: c 2s 0s;
+}
+
+@keyframes c {
 	from {
 		width: 0%;
 	}
