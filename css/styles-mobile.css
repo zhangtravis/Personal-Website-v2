@@ -38,6 +38,7 @@
 	}
 }
 
+/* TODO: Make nav bar vertical */
 @media screen and (max-width: 925px) {
 	.nav-bar nav ul li:nth-child(1) {
 		padding: 0 10px 0 0;
@@ -46,4 +47,36 @@
 	.nav-bar nav ul li:nth-child(4) {
 		padding: 0 0px 0 5px;
 	}
+
+	.nav-bar .intro-wrapper {
+		top: 320px;
+		margin-left: -100px;
+	}
+
+	.nav-bar .intro-wrapper .img-wrapper {
+		width: 100px;
+		height: 100px;
+		margin: 0 3% 10px;
+	}
+
+	.nav-bar .intro-wrapper h1 {
+		font-size: 20px;
+		width: 150px;
+	}
+	/*.nav-bar nav ul li {
+		display: inline;
+		float: none;
+	}
+
+	.nav-bar nav ul {
+		text-align: left;
+		margin-top: 15px;
+		padding: 15px;
+		display: block;
+		list-style-type: none;
+	}*/
+}
+
+@media screen and (max-width: 850px) {
+
 }
