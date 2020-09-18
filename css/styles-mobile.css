@@ -6,6 +6,10 @@
 	.nav-bar nav ul li:nth-child(4) {
 		padding: 0 6%;
 	}
+
+	.intro-background-image {
+		background-position: center -400px;
+	}
 }
 
 @media screen and (max-width: 1190px) {
