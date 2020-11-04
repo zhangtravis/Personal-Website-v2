@@ -290,7 +290,7 @@ body {
 	}
 }
 
-.animated.java, .animated.html {
+.animated.java {
 	width: 90%;
 	animation: java 2s 0s;
 }
@@ -301,6 +301,20 @@ body {
 	}
 	to {
 		width: 90%;
+	}
+}
+
+.animated.html {
+	width: 80%;
+	animation: html 2s 0s;
+}
+
+@keyframes html {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 80%;
 	}
 }
 
