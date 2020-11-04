@@ -291,7 +291,7 @@ body {
 }
 
 .animated.java, .animated.html {
-	width: 80%;
+	width: 90%;
 	animation: java 2s 0s;
 }
 
@@ -300,7 +300,7 @@ body {
 		width: 0%;
 	}
 	to {
-		width: 80%;
+		width: 90%;
 	}
 }
 
