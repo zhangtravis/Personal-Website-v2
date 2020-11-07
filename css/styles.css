@@ -1,4 +1,4 @@
-/* #f1f1f1 BORDER BOTTOM FOR SECTION */
+ /* #f1f1f1 BORDER BOTTOM FOR SECTION */
 
 html { scroll-behavior: smooth; }
 
@@ -10,8 +10,6 @@ body {
 	background-color: #dfe6e9;
 	font-family: 'Arvo', sans-serif;
 }
-
-
 
 
 
@@ -502,7 +500,7 @@ footer {
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
-.imgs .row {
+/*.imgs .row {
   display: flex;
   padding: 10px;
 }
@@ -510,6 +508,59 @@ footer {
 .imgs .column {
   flex: 33.33%;
   padding: 5px;
+}*/
+
+.bttn-container {
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.bttn-container button {
+	color: white;
+	background: linear-gradient(, #898989, #C1C1C1);
+	border-radius: 25%;
+	border: none;
+  	outline: none;
+	cursor: pointer;
+	font-size: 25px;
+	width: 50px;
+	height: 50px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+/* Style the buttons */
+
+.bttn-container .btn:hover {
+  background-color: #ddd;
+  box-sizing: border-box;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+  box-sizing: border-box;
 }
 
 
@@ -623,37 +674,3 @@ sup {
 	text-align: center;
 	padding-bottom: 100px;
 }
-
-
-
-
-
-/* contact.html */
-
-
-/*.contact-title h1 {
-	font-weight: bold;
-	letter-spacing: 2px;
-	font-size: 50px;
-	text-decoration: underline;
-	margin-top: 150px;
-	text-align: center;
-}
-
-.contact-container {
-	text-align: center;
-}
-
-.contact {
-	display: inline-block;
-	text-align: left;
-}
-
-.contact label {
-	font
-}
-
-.contact input {
-	margin: 10px 0;
-	border: 1px solid red;
-}*/
