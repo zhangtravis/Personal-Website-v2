@@ -29,7 +29,7 @@ function four() {
 }
 
 // Add active class to the current button (highlight it)
-var header = document.getElementById("myHeader");
+var header = document.getElementById("bttns");
 var btns = header.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
@@ -38,3 +38,32 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+/**
+ * Exposes an event called "imagesLoaded" which is triggered 
+ * when all images on the page have fully loaded.
+ */
+(function($) {
+    var loadImages = new Promise(function(done) {
+        var loading = $("img").length;
+        $("img").each(function() {
+            $("<img/>")
+                .on('load', function() {
+                    loading--;
+                    if (!loading) done();
+                })
+                .on('error', function() {
+                    loading--;
+                    if (!loading) done();
+                })
+                .attr("src", $(this).attr("src"))
+        });
+    });
+    loadImages.then(function() {
+        $(document).trigger({
+            type: "imagesLoaded"
+        });
+    });
+})(jQuery);
+
+$(document).on("imagesLoaded", function(){})
