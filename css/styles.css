@@ -11,20 +11,13 @@ body {
 	font-family: 'Arvo', sans-serif;
 }
 
+img {
+    pointer-events: none;
+}
+
 
 
 /* index.html */
-
-/* TODO: Check format.js*/
-.scroll-down {
-	transform: translate3d(0, -100%, 0);
-	transition: transform 0.4s;
-}
-
-.scroll-up {
-	transform: none;
-	transition: transform 0.4s;
-}
 
 /* HEADER */
 
@@ -557,7 +550,7 @@ footer {
   box-sizing: border-box;
 }
 
-.btn.active {
+.btn.clicked {
   background-color: #666;
   color: white;
   box-sizing: border-box;

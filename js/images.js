@@ -33,9 +33,9 @@ var header = document.getElementById("bttns");
 var btns = header.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    var current = document.getElementsByClassName("clicked");
+    current[0].className = current[0].className.replace(" clicked", "");
+    this.className += " clicked";
   });
 }
 
