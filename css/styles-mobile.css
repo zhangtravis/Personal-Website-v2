@@ -1,60 +1,22 @@
-@media screen and (max-width: 1332px) {
-	.nav-bar nav ul li:nth-child(1) {
-		padding: 0 6%;
-	}
-
-	.nav-bar nav ul li:nth-child(4) {
-		padding: 0 6%;
-	}
-
-	.intro-background-image {
-		background-position: center -400px;
-	}
-}
-
-@media screen and (max-width: 1190px) {
-	.nav-bar nav ul li:nth-child(1) {
-		padding: 0 4%;
-	}
-
-	.nav-bar nav ul li:nth-child(4) {
-		padding: 0 4%;
-	}
-}
-
-@media screen and (max-width: 1084px) {
-	.nav-bar nav ul li:nth-child(1) {
-		padding: 0 60px 0 0;
-	}
-
-	.nav-bar nav ul li:nth-child(4) {
-		padding: 0 0px 0 50px;
-	}
-}
-
-@media screen and (max-width: 1000px) {
-	.nav-bar nav ul li:nth-child(1) {
-		padding: 0 20px 0 0;
-	}
-
-	.nav-bar nav ul li:nth-child(4) {
-		padding: 0 0px 0 10px;
-	}
-}
-
 /* TODO: Make nav bar vertical */
 @media screen and (max-width: 925px) {
-	.nav-bar nav ul li:nth-child(1) {
-		padding: 0 10px 0 0;
+	.nav-bar nav ul li {
+		display: block;
+		padding: 0px;
 	}
 
-	.nav-bar nav ul li:nth-child(4) {
-		padding: 0 0px 0 5px;
+	.nav-bar nav ul li:nth-child(1) {
+		float: none;
+		margin-top: 0px;
+	}
+	
+	.nav-bar nav ul li:nth-child(2) {
+		float: none;
 	}
 
 	.nav-bar .intro-wrapper {
 		top: 320px;
-		margin-left: -100px;
+		margin-left: -20px;
 	}
 
 	.nav-bar .intro-wrapper .img-wrapper {
@@ -67,6 +29,11 @@
 		font-size: 20px;
 		width: 150px;
 	}
+
+	.intro-background-image {
+		background-position: center -350px;
+	}
+
 	/*.nav-bar nav ul li {
 		display: inline;
 		float: none;
